@@ -1,0 +1,1227 @@
+{
+	"info": {
+		"_postman_id": "bd5c7d83-0788-49a9-adae-c7ba74726781",
+		"name": "Evercon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14055803"
+	},
+	"item": [
+		{
+			"name": "localhost:5005/v1/users/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "User 01",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5005/v1/users/register",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"v1",
+						"users",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201 Created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "User 03",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5005/v1/users/register",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "90"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5a-b23H9HeHyJIiZ82GIFcMXjiJTE4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Jan 2024 09:32:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"username\": \"User 03\",\n    \"role\": \"participant\",\n    \"balance\": 0,\n    \"message\": \"User is created\"\n}"
+				},
+				{
+					"name": "400 Bad Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "User 02",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5005/v1/users/register",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"22-yHgVHWuLXlyiYK9UGj6vTrv3cIo\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Jan 2024 07:53:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Password is Required\"\n}"
+				},
+				{
+					"name": "400 Bad Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "User 01",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5005/v1/users/register",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"users",
+								"register"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "32"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"20-g0sdjyUSrl2aRK9cNYI5OO5jKHg\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Jan 2024 07:56:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User already exist\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:5005/v1/users/registeradmin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Admin 01",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5005/v1/users/registeradmin",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"v1",
+						"users",
+						"registeradmin"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201 Created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "Admin 01",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5005/v1/users/registeradmin",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"users",
+								"registeradmin"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"49-YHuGMjW4+c+Mnmamlzz21eHidHw\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Jan 2024 07:37:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"username\": \"Admin 01\",\n    \"role\": \"admin\",\n    \"message\": \"User is created\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:5005/v1/users/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "User 01",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5005/v1/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"v1",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "User 01",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5005/v1/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "239"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ef-uW+h9PcP/Ow72YR5eaEQg+8pvEQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Jan 2024 07:42:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"username\": \"User 01\",\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJVc2VyIDAxIiwicm9sZSI6InBhcnRpY2lwYW50IiwiaWF0IjoxNzA2MTY4NTcwLCJleHAiOjE3MDY2MDA1NzB9.nGK8ub06f74h50Q_ea7WSLnpa_tKRTVMIn8Kae8p1Vc\"\n}"
+				},
+				{
+					"name": "401 Unauthorized",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "User 01",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5005/v1/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-8sEiL4o/Ad7uZXCSwLtJpc+rtOA\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Jan 2024 07:45:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Wrong Username or Password\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:5005/v1/users?role=participant || admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5005/v1/users?role=participant",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"v1",
+						"users"
+					],
+					"query": [
+						{
+							"key": "role",
+							"value": "participant"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5005/v1/users?role=participant",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "role",
+									"value": "participant"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "299"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"12b-Z6wdhC5oK//xpNJigov7WGoK0es\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Jan 2024 09:03:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"username\": \"User 01\",\n        \"password\": \"123456\",\n        \"role\": \"participant\",\n        \"createdAt\": \"2024-01-25T07:33:31.000Z\",\n        \"updatedAt\": \"2024-01-25T07:33:31.000Z\"\n    },\n    {\n        \"id\": 3,\n        \"username\": \"User 02\",\n        \"password\": \"123456\",\n        \"role\": \"participant\",\n        \"createdAt\": \"2024-01-25T09:02:48.000Z\",\n        \"updatedAt\": \"2024-01-25T09:02:48.000Z\"\n    }\n]"
+				},
+				{
+					"name": "404 Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5005/v1/users?role=participan",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "role",
+									"value": "participan"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f-ZyHCio4w2R51ZmbkfZV4cATeB5I\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jan 2024 02:50:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User is not found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:5005/v1/users/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5005/v1/users/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"v1",
+						"users",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5005/v1/users/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "486"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e6-KcGasnSg7tPTM9QyjbNUL/t30gQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jan 2024 02:25:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"username\": \"User 03\",\n    \"password\": \"123456\",\n    \"role\": \"participant\",\n    \"createdAt\": \"2024-01-25T09:32:46.000Z\",\n    \"updatedAt\": \"2024-01-25T09:32:46.000Z\",\n    \"Activities\": [\n        {\n            \"description\": \"Saldo awal\",\n            \"type\": \"revenue\",\n            \"value\": 1000000\n        },\n        {\n            \"description\": \"Penjualan 01\",\n            \"type\": \"revenue\",\n            \"value\": 1000000\n        },\n        {\n            \"description\": \"Penjualan 02\",\n            \"type\": \"revenue\",\n            \"value\": 1000000\n        },\n        {\n            \"description\": \"Pembelian 01\",\n            \"type\": \"expense\",\n            \"value\": 500000\n        }\n    ],\n    \"Currency\": {\n        \"balance\": 2500000,\n        \"updatedAt\": \"2024-01-27T02:25:45.000Z\"\n    }\n}"
+				},
+				{
+					"name": "404 Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5005/v1/users/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"users",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "31"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f-ZyHCio4w2R51ZmbkfZV4cATeB5I\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jan 2024 02:41:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User is not found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:5005/v1/activities",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "Penjualan 02",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "revenue",
+							"type": "text"
+						},
+						{
+							"key": "value",
+							"value": "1000000",
+							"type": "text"
+						},
+						{
+							"key": "UserId",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5005/v1/activities",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"v1",
+						"activities"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201 Created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Penjualan 02",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "revenue",
+									"type": "text"
+								},
+								{
+									"key": "value",
+									"value": "1000000",
+									"type": "text"
+								},
+								{
+									"key": "UserId",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5005/v1/activities",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"activities"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "117"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"75-XUGSxlWjZqq1msI/1MSedIDUAwY\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Jan 2024 06:15:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"description\": \"Penjualan 02\",\n    \"type\": \"revenue\",\n    \"value\": \"1000000\",\n    \"UserId\": \"4\",\n    \"message\": \"Activity is created\"\n}"
+				},
+				{
+					"name": "400 Bad Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Pembelian 01",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "expense",
+									"type": "text"
+								},
+								{
+									"key": "value",
+									"value": "10000000",
+									"type": "text"
+								},
+								{
+									"key": "UserId",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5005/v1/activities",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"activities"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"23-+1nST+555kIdv8aeRlhgYNWIvDg\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 26 Jan 2024 06:23:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Balance is not enough\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:5005/v1/activities/:UserId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5005/v1/activities/:UserId",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"v1",
+						"activities",
+						":UserId"
+					],
+					"variable": [
+						{
+							"key": "UserId",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5005/v1/activities/:UserId",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"activities",
+								":UserId"
+							],
+							"variable": [
+								{
+									"key": "UserId",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "638"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27e-6UwNs/zM4qJ4UgYZtcUXLBhorXo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jan 2024 02:36:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"description\": \"Saldo awal\",\n        \"type\": \"revenue\",\n        \"value\": 1000000,\n        \"createdAt\": \"2024-01-26T03:39:11.000Z\",\n        \"updatedAt\": \"2024-01-26T03:39:11.000Z\",\n        \"UserId\": 4\n    },\n    {\n        \"id\": 2,\n        \"description\": \"Penjualan 01\",\n        \"type\": \"revenue\",\n        \"value\": 1000000,\n        \"createdAt\": \"2024-01-26T06:13:42.000Z\",\n        \"updatedAt\": \"2024-01-26T06:13:42.000Z\",\n        \"UserId\": 4\n    },\n    {\n        \"id\": 3,\n        \"description\": \"Penjualan 02\",\n        \"type\": \"revenue\",\n        \"value\": 1000000,\n        \"createdAt\": \"2024-01-26T06:15:40.000Z\",\n        \"updatedAt\": \"2024-01-26T06:15:40.000Z\",\n        \"UserId\": 4\n    },\n    {\n        \"id\": 4,\n        \"description\": \"Pembelian 01\",\n        \"type\": \"expense\",\n        \"value\": 500000,\n        \"createdAt\": \"2024-01-27T02:25:45.000Z\",\n        \"updatedAt\": \"2024-01-27T02:25:45.000Z\",\n        \"UserId\": 4\n    }\n]"
+				},
+				{
+					"name": "404 Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5005/v1/activities/:UserId",
+							"host": [
+								"localhost"
+							],
+							"port": "5005",
+							"path": [
+								"v1",
+								"activities",
+								":UserId"
+							],
+							"variable": [
+								{
+									"key": "UserId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"23-CBP7EdReXkysC41n0gJgNd3aEZw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 27 Jan 2024 02:45:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Activity is not found\"\n}"
+				}
+			]
+		}
+	]
+}
