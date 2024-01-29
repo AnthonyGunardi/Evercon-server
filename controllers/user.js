@@ -101,7 +101,11 @@ class UserController {
         where: { id },
         include: [{
           model: Activity,
-          attributes:['description', 'type', 'value']
+          attributes:['description', 'type', 'value'],
+          separate: true,
+          order: [
+            ['id', 'DESC']
+          ]
         },
         {
           model: Currency,
